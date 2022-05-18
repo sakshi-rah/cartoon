@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cartoon Website</title>
+    <style>
+        h1 {
+            border-radius: 20px;
+            text-align: center;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .img-cartoon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(2px 2px 2px black);
+            border-radius: 50%;
+            height: 300px;
+
+        }
+
+        .img-cartoon:hover {
+            box-shadow: 2px 2px 2px 3px black;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+
+        }
+
+        .btn-item {
+            border-radius: 20px;
+            box-shadow: 2px 2px 4px rgb(15, 15, 15);
+            padding: 8px;
+            font-size: 20px;
+            border: none;
+        }
+
+        .btn-item:hover {
+            box-shadow: 3px 3px 5px black;
+            background-color: rgb(29, 138, 102);
+            border-radius: 10px;
+            border: none;
+        }
+
+        .btn-dor {
+            background-color: #3366ff;
+            color: black;
+        }
+
+        .btn-shin {
+            background-color: #ff3377;
+            color: white;
+        }
+
+        .btn-mickey {
+            background-color: #ff6600;
+            color: black;
+        }
+        .btn-pika{
+            background-color: green;
+            color: white;
+        }
+    </style>
+    <script>
+     function doreamon()
+     {
+         document.getElementById("img-cartoon").src='./img/Doreamon.jpg';
+     }
+     function shinchan()
+     {
+         document.getElementById("img-cartoon").src="./img/Shinchan.jpg";
+     }
+     function mickey_mouse()
+     {
+         document.getElementById("img-cartoon").src="./img/Mickey-Mouse.jpg";
+     }
+     function pikachu()
+     {
+         document.getElementById("img-cartoon").src="./img/pikachu.webp";
+     }
+
+    </script>
+</head>
+
+<body style="background-image: url(./img/bg.pic) ; background-size: cover;">
+    <h1>👩‍❤️‍👩 A lot of Cartoon💕😎</h1>
+    <img src="./img/Doreamon.jpg" class="img-cartoon" id="img-cartoon">
+    <div class="container">
+
+        <button class="btn-item btn-dor" onclick="doreamon()"> Doreamon </button>
+
+        <button class="btn-item btn-shin" onclick="shinchan()"> Shinchan </button>
+
+        <button class="btn-item btn-mickey" onclick="mickey_mouse()"> Mickey-Mouse </button>
+
+        <button class="btn-item btn-pika" onclick="pikachu()"> Pikachu </button>
+
+    </div>
+</body>
+
+</html>
