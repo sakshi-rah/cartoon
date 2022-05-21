@@ -5,10 +5,10 @@
     <title>Cartoon Website</title>
     <style>
         h1 {
-            background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);           
+            background-image: linear-gradient(135deg, #FD6585 10%, #0D25B9 100%);
             border-radius: 20px;
             text-align: center;
-            color:white;
+            color: white;
             margin-bottom: 30px;
 
         }
@@ -52,43 +52,76 @@
         }
 
         .btn-dor {
-            background-image: linear-gradient( 91.9deg,  rgba(0,29,38,1) 2.6%, rgba(0,191,255,1) 99.1% );
+            background-image: linear-gradient(91.9deg, rgba(0, 29, 38, 1) 2.6%, rgba(0, 191, 255, 1) 99.1%);
             color: black;
         }
 
         .btn-shin {
-            background-image: linear-gradient( 179.2deg,  rgba(255,221,24,1) 16.1%, rgba(241,102,36,1) 86.8% );
-            color:black;
+            background-image: linear-gradient(179.2deg, rgba(255, 221, 24, 1) 16.1%, rgba(241, 102, 36, 1) 86.8%);
+            color: black;
         }
 
         .btn-mickey {
-            background-image: linear-gradient( 90.3deg,  rgba(255,118,118,1) 0.9%, rgba(114,0,0,1) 99.9% );
+            background-image: linear-gradient(90.3deg, rgba(255, 118, 118, 1) 0.9%, rgba(114, 0, 0, 1) 99.9%);
             color: black;
         }
 
         .btn-pika {
-            background-image: linear-gradient( 63deg,  rgba(242,168,168,1) 2.9%, rgba(94,46,165,1) 102.1% );
+            background-image: linear-gradient(63deg, rgba(242, 168, 168, 1) 2.9%, rgba(94, 46, 165, 1) 102.1%);
             color: black;
         }
+
+        .bg-doreamon {
+            background-image: url('./img/doreamonhouse.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .bg-shinchan {
+            background-image: url('./img/shinchanhouse.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .bg-mickey-mouse {
+            background-image: url('./img/mickeymousehouse.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .bg-pikachu {
+            background-image: url('./img/pikachuhouse.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
     </style>
+
     <script>
         function doreamon() {
-            document.getElementById("img-cartoon").src = './img/Doreamon.jpg';
+            document.getElementById("img-cartoon").src = './img/doreamon.jpg';
+            document.getElementById("background").className = 'bg-doreamon';
         }
         function shinchan() {
-            document.getElementById("img-cartoon").src = "./img/Shinchan.jpg";
+            document.getElementById("img-cartoon").src = "./img/shinchan.jpg";
+            document.getElementById("background").className = 'bg-shinchan';
         }
         function mickey_mouse() {
-            document.getElementById("img-cartoon").src = "./img/Mickey-Mouse.jpg";
+            document.getElementById("img-cartoon").src = "./img/mickey-Mouse.jpg";
+            document.getElementById("background").className = 'bg-mickey-mouse';
         }
         function pikachu() {
             document.getElementById("img-cartoon").src = "./img/pikachu.webp";
+            document.getElementById("background").className = 'bg-pikachu';
         }
 
     </script>
 </head>
 
-<body style="background-image: url(./img/bg.pic) ; background-size: cover; background-repeat: no-repeat;">
+<body class="bg-doreamon" id="background">
     <h1> A lot of Cartoon</h1>
     <img src="./img/Doreamon.jpg" class="img-cartoon" id="img-cartoon">
     <div class="container">
